@@ -6,9 +6,10 @@ using HW_20.Infrastructure.DB;
 using HW_20.Infrastructure.Repositoris;
 using HW_20.Service.AppService;
 using HW_20.Service.Service;
-using HW_21_API.Middelware;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using Scalar.AspNetCore;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,13 +17,14 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-//// خواندن apiKey از فایل تنظیمات
+// خواندن apiKey از فایل تنظیمات
 var apiKey = builder.Configuration["ApiKey"];
+
 
 builder.Services.AddScoped<IAuthenticationService>(provider =>
 {
     var config = provider.GetRequiredService<IConfiguration>();
-    var apiKey = config.GetValue<string>("ApiKey");
+    var apiKey = config.GetValue<string>("ApiSettings:ApiKey");
 
     var authRepository = provider.GetRequiredService<IAuthenticationRepository>();
     return new AuthenticationService(authRepository, apiKey);
@@ -31,8 +33,6 @@ builder.Services.AddScoped<IAuthenticationService>(provider =>
 
 // اضافه کردن سرویس‌ها
 builder.Services.AddControllersWithViews();
-//builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
-//builder.Services.AddScoped<IAuthenticationRepository, AuthenticationRepository>();
 builder.Services.AddScoped<IInspectionRequestAppService, InspectionRequestAppService>();
 builder.Services.AddScoped<IInspectionRequestService, InspectionRequestService>();
 builder.Services.AddScoped<IInspectionRequestRepository, InspectionRequestRepository>();
@@ -42,13 +42,12 @@ builder.Services.AddScoped<ICarModelAppSevice, CarModelAppSevice>();
 builder.Services.AddScoped<ICarModelRepository, CarModelRepository>();
 builder.Services.AddControllersWithViews().AddDataAnnotationsLocalization();
 
+
+
 // پیکربندی OpenAPI
 builder.Services.AddOpenApi();
 
 var app = builder.Build();
-
-//افزودن Middleware برای بررسی API Key
-app.UseMiddleware<ApiKeyMiddleware>();
 
 // تنظیمات مربوط به محیط توسعه و دیگر پیکربندی‌ها
 if (app.Environment.IsDevelopment())
@@ -60,3 +59,5 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
+
+app.Run();

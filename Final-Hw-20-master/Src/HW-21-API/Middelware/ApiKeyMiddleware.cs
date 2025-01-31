@@ -1,31 +1,50 @@
 ﻿namespace HW_21_API.Middelware
 {
+
+    //public static class ApiKeyMiddlewareExtentions
+    //{
+
+    //}
     public class ApiKeyMiddleware
     {
         private readonly RequestDelegate _next;
-        private readonly string _apiKey;
-
-        public ApiKeyMiddleware(RequestDelegate next, IConfiguration configuration)
+        public ApiKeyMiddleware(RequestDelegate next)
         {
             _next = next;
-            _apiKey = configuration["ApiKey"]; // خواندن API Key از فایل تنظیمات
-        }
 
+        }
         public async Task InvokeAsync(HttpContext context)
         {
-            if (!context.Request.Headers.TryGetValue("ApiKey", out var extractedApiKey) || extractedApiKey != _apiKey)
-            {
-                // ثبت مقادیر برای عیب‌یابی
-                Console.WriteLine($"Extracted: {extractedApiKey}, Expected: {_apiKey}");
 
-                context.Response.StatusCode = StatusCodes.Status401Unauthorized;
-                await context.Response.WriteAsync("Unauthorized: Invalid API Key");
-                return;
-            }
-
-            await _next(context);
+            _next(context);
         }
     }
+    //public class ApiKeyMiddleware
+    //{
+    //    private readonly RequestDelegate _next;
+    //    private readonly string _apiKey;
+
+    //    public ApiKeyMiddleware(RequestDelegate next, IConfiguration configuration)
+    //    {
+    //        _next = next;
+    //        _apiKey = configuration["ApiKey"]; // خواندن API Key از فایل تنظیمات
+    //    }
+
+    //    public async Task InvokeAsync(HttpContext context)
+    //    {
+    //        if (!context.Request.Headers.TryGetValue("ApiKey", out var extractedApiKey) || extractedApiKey != _apiKey)
+    //        {
+    //            // ثبت مقادیر برای عیب‌یابی
+    //            Console.WriteLine($"Extracted: {extractedApiKey}, Expected: {_apiKey}");
+
+    //            context.Response.StatusCode = StatusCodes.Status401Unauthorized;
+    //            await context.Response.WriteAsync("Unauthorized: Invalid API Key");
+    //            return;
+    //        }
+
+    //        await _next(context);
+    //    }
+    //}
 }
 //public class ApiKeyMiddleware
 //{
