@@ -36,3 +36,4 @@ C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\1.Domain\Serv
 C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\1.Domain\Services\HW-20.Service\obj\Debug\net8.0\HW-20.Service.pdb
 C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\1.Domain\Services\HW-20.Service\obj\Debug\net8.0\HW-20.Service.genruntimeconfig.cache
 C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\1.Domain\Services\HW-20.Service\obj\Debug\net8.0\ref\HW-20.Service.dll
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\1.Domain\Services\HW-20.Service\obj\Debug\net8.0\HW-20.Service.sourcelink.json

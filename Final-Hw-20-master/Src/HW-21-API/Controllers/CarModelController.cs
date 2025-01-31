@@ -10,27 +10,26 @@ namespace HW_21_API.Controllers
     [Route("[controller]")]
     public class CarModelController : ControllerBase
     {
-        private readonly AppDbContext _appDbContext;
-        private readonly ICarModelSevice _CarModelSevice;
-        private readonly ICarModelAppSevice _CarModelAppSevice;
-        public CarModelController(AppDbContext appDbContext, ICarModelSevice CarModelSevice, ICarModelAppSevice CarModelAppSevice)
-        {
-            _appDbContext = appDbContext;
-            _CarModelSevice = CarModelSevice;
-            _CarModelAppSevice = CarModelAppSevice;
+        private readonly AppDbContext _appDbcontext;
+        private readonly ICarModelSevice _carModelSevice;
+        private readonly ICarModelAppSevice _carModelAppSevice;
 
-        }
-   
-        [HttpGet]
-        public IActionResult CarModel()
+        public CarModelController(AppDbContext appDbContext, ICarModelSevice carModelSevice, ICarModelAppSevice carModelAppSevice)
         {
-            var requests = _appDbContext.CarModels.ToList();
-            return Ok(requests); 
+            _appDbcontext = appDbContext;
+            _carModelSevice = carModelSevice;
+            _carModelAppSevice = carModelAppSevice;
+        }
+        [HttpGet("List")]
+        public async Task<List<CarModel>> CarModel()
+        {
+            List<CarModel> carModels = _appDbcontext.CarModels.ToList();
+            return carModels;
         }
         [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
-            var result = _CarModelSevice.GetCarModel(id);
+            var result = _carModelSevice.GetCarModel(id);
             if (result == null)
             {
                 return NotFound("مدل وجود ندارد.");
@@ -38,7 +37,7 @@ namespace HW_21_API.Controllers
             return Ok(result);
         }
 
-        [HttpPost("Edit")]
+        [HttpPost("edit")]
         public IActionResult EditCarModel(int id, string name)
         {
             if (!ModelState.IsValid)
@@ -46,23 +45,22 @@ namespace HW_21_API.Controllers
                 return BadRequest("لطفاً داده‌ها را به صورت صحیح وارد کنید.");
             }
 
-            var result = _CarModelAppSevice.EditCarModel(id, name);
+            var result = _carModelAppSevice.EditCarModel(id, name);
             if (!result)
             {
-                return BadRequest("ویرایش ناموفق بود.");
+                return BadRequest("Edit failed.");
             }
-            return Ok("ویرایش موفق بود.");
+            return Ok("ویرایش ناموفق بود.");
         }
-
-        [HttpPost("Delete")]
+        [HttpPost]
         public IActionResult DeletCarModel(int id)
         {
             try
             {
-                var result = _CarModelAppSevice.DeleteCarModel(id);
-                if (!result)
+                var result = _carModelAppSevice.DeleteCarModel(id);
+                if (result == null)
                 {
-                    return NotFound("مدل پیدا نشد");
+                    return BadRequest("مدل پیدا نشد");
                 }
                 return Ok("مدل تأیید شد.");
             }
@@ -71,7 +69,7 @@ namespace HW_21_API.Controllers
                 return BadRequest("خطایی در تأیید مدل رخ داد");
             }
         }
-        [HttpPost("Add")]
+        [HttpPost("add-product")]
         public IActionResult AddCarModele(string name)
         {
             var cardModel = new CarModel
@@ -82,8 +80,8 @@ namespace HW_21_API.Controllers
             {
                 return BadRequest("لطفاً داده‌ها را به صورت صحیح وارد کنید");
             }
-            var result = _CarModelAppSevice.AddCarModel(name);
-            return Ok("مدل ثبت شد.");
+            var result = _carModelAppSevice.AddCarModel(name);
+            return Ok("مدل تأیید شد.");
         }
     }
 }

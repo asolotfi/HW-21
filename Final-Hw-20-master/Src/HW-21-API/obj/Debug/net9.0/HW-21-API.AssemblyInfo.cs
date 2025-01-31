@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HW-21-API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7c3ff28875267c1efe6f711d542813361a94ba8a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d99b61b2f766ae7ecc0da303e137157e14813a67")]
 [assembly: System.Reflection.AssemblyProductAttribute("HW-21-API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HW-21-API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
