@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Find-HW-20")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7c3ff28875267c1efe6f711d542813361a94ba8a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Find-HW-20")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Find-HW-20")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

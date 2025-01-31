@@ -1,9 +1,13 @@
-﻿using HW_20.Domain.Contract.Service;
+﻿using Azure.Core;
+using HW_20.Domain.Contract.Service;
+using HW_20.Service.AppService;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HW_20.Controllers
 {
-    public class UserController : Controller
+    [ApiController]
+    [Route("[controller]")]
+    public class UserController : ControllerBase
     {
 
         private readonly IAuthenticationAppService _AuthenticationAppService;
@@ -13,23 +17,18 @@ namespace HW_20.Controllers
             _AuthenticationAppService = AuthenticationAppService;
         }
 
-        [HttpGet]
-        public IActionResult signin()
-        {
-            return View();
-        }
 
-        [HttpGet]
+
+        [HttpPost("login")]
         public IActionResult Login(string userName, string password)
         {
             if (_AuthenticationAppService.Login(userName, password))
             {
-                return RedirectToAction("Show", "Home");
+                return Ok(new { Message = "ورود موفقیت‌آمیز" });
             }
             else
             {
-                TempData["ErrorMessage"] = "ورود به سیستم ناموفق بود";
-                return View("Index");
+                return Unauthorized(new { Message = "ورود به سیستم ناموفق بود" });
             }
         }
     }
