@@ -1,0 +1,33 @@
+﻿@foreach (var group in Model.RequestsGroupedByDate)
+{
+    <h3>@group.Key.ToShortDateString()</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>شماره پلاک</th>
+                <th>تاریخ درخواست</th>
+                <th>وضعیت</th>
+                <th>اقدام</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var request in group)
+            {
+                <tr>
+                    <td>@request.PlateNumber</td>
+                    <td>@request.RequestDate.ToShortDateString()</td>
+                    <td>@request.Status</td>
+                    <td>
+                        <form method="post" action="@Url.Action("Approve", new { id = request.Id })">
+                            <button type="submit">تأیید</button>
+                        </form>
+                        <form method="post" action="@Url.Action("Reject", new { id = request.Id })">
+                            <button type="submit">رد</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+

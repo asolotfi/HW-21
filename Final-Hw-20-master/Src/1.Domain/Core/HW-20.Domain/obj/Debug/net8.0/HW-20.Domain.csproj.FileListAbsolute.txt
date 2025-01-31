@@ -1,0 +1,26 @@
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20-master (5)\Final-Hw-20-master\Src\1.Domain\Core\HW-20.Domain\bin\Debug\net8.0\HW-20.Domain.deps.json
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20-master (5)\Final-Hw-20-master\Src\1.Domain\Core\HW-20.Domain\bin\Debug\net8.0\HW-20.Domain.runtimeconfig.json
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20-master (5)\Final-Hw-20-master\Src\1.Domain\Core\HW-20.Domain\bin\Debug\net8.0\HW-20.Domain.dll
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20-master (5)\Final-Hw-20-master\Src\1.Domain\Core\HW-20.Domain\bin\Debug\net8.0\HW-20.Domain.pdb
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20-master (5)\Final-Hw-20-master\Src\1.Domain\Core\HW-20.Domain\obj\Debug\net8.0\HW-20.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20-master (5)\Final-Hw-20-master\Src\1.Domain\Core\HW-20.Domain\obj\Debug\net8.0\HW-20.Domain.AssemblyInfoInputs.cache
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20-master (5)\Final-Hw-20-master\Src\1.Domain\Core\HW-20.Domain\obj\Debug\net8.0\HW-20.Domain.AssemblyInfo.cs
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20-master (5)\Final-Hw-20-master\Src\1.Domain\Core\HW-20.Domain\obj\Debug\net8.0\HW-20.Domain.csproj.CoreCompileInputs.cache
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20-master (5)\Final-Hw-20-master\Src\1.Domain\Core\HW-20.Domain\obj\Debug\net8.0\HW-20.Domain.dll
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20-master (5)\Final-Hw-20-master\Src\1.Domain\Core\HW-20.Domain\obj\Debug\net8.0\refint\HW-20.Domain.dll
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20-master (5)\Final-Hw-20-master\Src\1.Domain\Core\HW-20.Domain\obj\Debug\net8.0\HW-20.Domain.pdb
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20-master (5)\Final-Hw-20-master\Src\1.Domain\Core\HW-20.Domain\obj\Debug\net8.0\HW-20.Domain.genruntimeconfig.cache
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20-master (5)\Final-Hw-20-master\Src\1.Domain\Core\HW-20.Domain\obj\Debug\net8.0\ref\HW-20.Domain.dll
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\1.Domain\Core\HW-20.Domain\bin\Debug\net8.0\HW-20.Domain.deps.json
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\1.Domain\Core\HW-20.Domain\bin\Debug\net8.0\HW-20.Domain.runtimeconfig.json
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\1.Domain\Core\HW-20.Domain\bin\Debug\net8.0\HW-20.Domain.dll
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\1.Domain\Core\HW-20.Domain\bin\Debug\net8.0\HW-20.Domain.pdb
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\1.Domain\Core\HW-20.Domain\obj\Debug\net8.0\HW-20.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\1.Domain\Core\HW-20.Domain\obj\Debug\net8.0\HW-20.Domain.AssemblyInfoInputs.cache
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\1.Domain\Core\HW-20.Domain\obj\Debug\net8.0\HW-20.Domain.AssemblyInfo.cs
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\1.Domain\Core\HW-20.Domain\obj\Debug\net8.0\HW-20.Domain.csproj.CoreCompileInputs.cache
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\1.Domain\Core\HW-20.Domain\obj\Debug\net8.0\HW-20.Domain.dll
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\1.Domain\Core\HW-20.Domain\obj\Debug\net8.0\refint\HW-20.Domain.dll
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\1.Domain\Core\HW-20.Domain\obj\Debug\net8.0\HW-20.Domain.pdb
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\1.Domain\Core\HW-20.Domain\obj\Debug\net8.0\HW-20.Domain.genruntimeconfig.cache
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\1.Domain\Core\HW-20.Domain\obj\Debug\net8.0\ref\HW-20.Domain.dll

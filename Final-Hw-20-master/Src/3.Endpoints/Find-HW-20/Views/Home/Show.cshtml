@@ -1,0 +1,137 @@
+﻿@model List<HW_20.Domain.Entites.Car.InspectionRequest>
+
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>لیست </title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background: linear-gradient(to right, #b92b27, #1565c0);
+            color: white;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+
+        .btn {
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin: 2px;
+        }
+
+        .btn-update {
+            background-color: #f0ad4e;
+        }
+
+        .btn-delete {
+            background-color: #d9534f;
+        }
+
+        .btn-details {
+            background-color: #5bc0de;
+        }
+
+        .btn-create {
+            background-color: #d9534f;
+        }
+
+        .btn-update:hover {
+            background-color: #ec971f;
+        }
+
+        .btn-delete:hover {
+            background-color: #c9302c;
+        }
+
+        .btn-details:hover {
+            background-color: #31b0d5;
+        }
+
+        .btn-create:hover {
+            background-color: #31b0d5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>لیست محصولات</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>شناسه</th>
+                    <th>شماره موبایل</th>
+                    <th>کد ملی</th>
+                    <th>شماره پلاک</th>
+                    <th>ماشین</th>
+                    <th>شرکت</th>
+                    <th>وضعیت</th>
+                    <th>عملیات</th>
+                </tr>
+            </thead>
+            <tbody>
+               
+                @if (Model != null && Model.Any())
+                {
+                    foreach (var car in Model)
+                    {
+                        <tr>
+                            <td>@car.Id</td>
+                            <td>@car.PhoneNumber</td>
+                            <td>@car.CodeMeli</td>
+                            <td>@car.PlateNumber</td>
+                            <td>@car.Car</td>
+                            <td>@car.Company</td>
+                            <td>@car.Status</td>
+                            <td>
+                                <form asp-controller="Home" asp-action="Approve" method="post" style="display:inline;">
+                                    <input type="hidden" name="id" value="@car.Id" />
+                                    <button type="submit" class="btn btn-update">تایید</button>
+                                </form>
+                                <form asp-controller="Home" asp-action="Reject" method="post" style="display:inline;">
+                                    <input type="hidden" name="id" value="@car.Id" />
+                                    <button type="submit" class="btn btn-delete">رد</button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="7">هیچ درخواستی جهت نمایش وجود ندارد.</td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+
+        
+    </div>
+</body>
+</html>

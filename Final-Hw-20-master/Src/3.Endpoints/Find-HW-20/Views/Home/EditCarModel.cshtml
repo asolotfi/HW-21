@@ -1,0 +1,123 @@
+﻿@using HW_20.Domain.Entites.Car
+@model CarModel
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+}
+<div class="text-center">
+
+    <!DOCTYPE html>
+    <html lang="fa">
+    <head>
+        <meta charset="UTF-8">
+        <title>ویرایش کردن </title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: sans-serif;
+                background: linear-gradient(to right, #b92b27, #1565c0);
+                color: white;
+                text-align: center;
+            }
+
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+            }
+
+            .card {
+                background: #191919;
+                padding: 40px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                width: 400px;
+                transition: 0.3s;
+            }
+
+                .card h1 {
+                    color: white;
+                    margin-bottom: 20px;
+                }
+
+                .card .text-muted {
+                    color: #c1c1c1;
+                    margin-bottom: 20px;
+                }
+
+                .card input[type="text"],
+                .card input[type="password"] {
+                    border: none;
+                    background: none;
+                    display: block;
+                    margin: 10px auto;
+                    text-align: center;
+                    border: 2px solid #3498db;
+                    padding: 10px 15px;
+                    width: 85%;
+                    color: white;
+                    border-radius: 24px;
+                    transition: 0.25s;
+                }
+
+                    .card input[type="text"]:focus,
+                    .card input[type="password"]:focus {
+                        width: 90%;
+                        border-color: #2ecc71;
+                    }
+
+                .card input[type="submit"] {
+                    border: 0;
+                    background: #2ecc71;
+                    display: block;
+                    margin: 20px auto;
+                    padding: 10px 20px;
+                    width: 50%;
+                    color: white;
+                    border-radius: 24px;
+                    transition: 0.25s;
+                    cursor: pointer;
+                }
+
+                    .card input[type="submit"]:hover {
+                        background-color: #27ae60;
+                    }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <!-- نمایش پیام خطا -->
+            @if (TempData["ErrorMessage"] != null)
+            {
+                <div class="alert alert-danger">
+                    @TempData["ErrorMessage"]
+                </div>
+            }
+
+            <!-- نمایش پیام موفقیت -->
+            @if (TempData["SuccessMessage"] != null)
+            {
+                <div class="alert alert-success">
+                    @TempData["SuccessMessage"]
+                </div>
+            }
+            <div class="card">
+
+                <!-- فرم ثبت درخواست -->
+                <form asp-action="EditeCarModel" method="post">
+                    <input type="hidden" name="id" value="@Model.Id" />
+                    <label for="name">نام مدل:</label>
+                    <input type="text" name="name" value="@Model.Name" />
+                    <button type="submit">ذخیره</button>
+                </form>
+            </div>
+        </div>
+        @section Scripts {
+            <partial name="_ValidationScriptsPartial" />
+        }
+    </body>
+</html>
+
+</div>

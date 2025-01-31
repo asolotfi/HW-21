@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\HW-21-API.props" />
+</Project>

@@ -1,0 +1,38 @@
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20-master (5)\Final-Hw-20-master\Src\1.Domain\Services\HW-20.Service\bin\Debug\net8.0\HW-20.Service.deps.json
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20-master (5)\Final-Hw-20-master\Src\1.Domain\Services\HW-20.Service\bin\Debug\net8.0\HW-20.Service.runtimeconfig.json
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20-master (5)\Final-Hw-20-master\Src\1.Domain\Services\HW-20.Service\bin\Debug\net8.0\HW-20.Service.dll
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20-master (5)\Final-Hw-20-master\Src\1.Domain\Services\HW-20.Service\bin\Debug\net8.0\HW-20.Service.pdb
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20-master (5)\Final-Hw-20-master\Src\1.Domain\Services\HW-20.Service\bin\Debug\net8.0\HW-20.Domain.dll
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20-master (5)\Final-Hw-20-master\Src\1.Domain\Services\HW-20.Service\bin\Debug\net8.0\HW-20.Infrastructure.dll
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20-master (5)\Final-Hw-20-master\Src\1.Domain\Services\HW-20.Service\bin\Debug\net8.0\HW-20.Infrastructure.pdb
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20-master (5)\Final-Hw-20-master\Src\1.Domain\Services\HW-20.Service\bin\Debug\net8.0\HW-20.Domain.pdb
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20-master (5)\Final-Hw-20-master\Src\1.Domain\Services\HW-20.Service\obj\Debug\net8.0\HW-20.Service.csproj.AssemblyReference.cache
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20-master (5)\Final-Hw-20-master\Src\1.Domain\Services\HW-20.Service\obj\Debug\net8.0\HW-20.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20-master (5)\Final-Hw-20-master\Src\1.Domain\Services\HW-20.Service\obj\Debug\net8.0\HW-20.Service.AssemblyInfoInputs.cache
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20-master (5)\Final-Hw-20-master\Src\1.Domain\Services\HW-20.Service\obj\Debug\net8.0\HW-20.Service.AssemblyInfo.cs
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20-master (5)\Final-Hw-20-master\Src\1.Domain\Services\HW-20.Service\obj\Debug\net8.0\HW-20.Service.csproj.CoreCompileInputs.cache
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20-master (5)\Final-Hw-20-master\Src\1.Domain\Services\HW-20.Service\obj\Debug\net8.0\HW-20.Se.12CD2220.Up2Date
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20-master (5)\Final-Hw-20-master\Src\1.Domain\Services\HW-20.Service\obj\Debug\net8.0\HW-20.Service.dll
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20-master (5)\Final-Hw-20-master\Src\1.Domain\Services\HW-20.Service\obj\Debug\net8.0\refint\HW-20.Service.dll
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20-master (5)\Final-Hw-20-master\Src\1.Domain\Services\HW-20.Service\obj\Debug\net8.0\HW-20.Service.pdb
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20-master (5)\Final-Hw-20-master\Src\1.Domain\Services\HW-20.Service\obj\Debug\net8.0\HW-20.Service.genruntimeconfig.cache
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20-master (5)\Final-Hw-20-master\Src\1.Domain\Services\HW-20.Service\obj\Debug\net8.0\ref\HW-20.Service.dll
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\1.Domain\Services\HW-20.Service\bin\Debug\net8.0\HW-20.Service.deps.json
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\1.Domain\Services\HW-20.Service\bin\Debug\net8.0\HW-20.Service.runtimeconfig.json
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\1.Domain\Services\HW-20.Service\bin\Debug\net8.0\HW-20.Service.dll
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\1.Domain\Services\HW-20.Service\bin\Debug\net8.0\HW-20.Service.pdb
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\1.Domain\Services\HW-20.Service\bin\Debug\net8.0\HW-20.Domain.dll
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\1.Domain\Services\HW-20.Service\bin\Debug\net8.0\HW-20.Infrastructure.dll
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\1.Domain\Services\HW-20.Service\bin\Debug\net8.0\HW-20.Infrastructure.pdb
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\1.Domain\Services\HW-20.Service\bin\Debug\net8.0\HW-20.Domain.pdb
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\1.Domain\Services\HW-20.Service\obj\Debug\net8.0\HW-20.Service.csproj.AssemblyReference.cache
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\1.Domain\Services\HW-20.Service\obj\Debug\net8.0\HW-20.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\1.Domain\Services\HW-20.Service\obj\Debug\net8.0\HW-20.Service.AssemblyInfoInputs.cache
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\1.Domain\Services\HW-20.Service\obj\Debug\net8.0\HW-20.Service.AssemblyInfo.cs
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\1.Domain\Services\HW-20.Service\obj\Debug\net8.0\HW-20.Service.csproj.CoreCompileInputs.cache
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\1.Domain\Services\HW-20.Service\obj\Debug\net8.0\HW-20.Se.12CD2220.Up2Date
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\1.Domain\Services\HW-20.Service\obj\Debug\net8.0\HW-20.Service.dll
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\1.Domain\Services\HW-20.Service\obj\Debug\net8.0\refint\HW-20.Service.dll
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\1.Domain\Services\HW-20.Service\obj\Debug\net8.0\HW-20.Service.pdb
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\1.Domain\Services\HW-20.Service\obj\Debug\net8.0\HW-20.Service.genruntimeconfig.cache
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\1.Domain\Services\HW-20.Service\obj\Debug\net8.0\ref\HW-20.Service.dll
