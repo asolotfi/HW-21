@@ -258,7 +258,7 @@ namespace Find_HW_20.Controllers
                 TempData["ErrorMessage"] = "لطفاً داده‌ها را به صورت صحیح وارد کنید.";
                 return View("Index", cardModel);
             }
-            var result = _CarModelAppSevice.AddCarModel(name);
+            var result = _CarModelAppSevice.AddCarModelAsync(name);
             TempData["SuccessMessage"] = "مدل ثبت شد.";
             return RedirectToAction("CarModel");
         }
@@ -268,7 +268,7 @@ namespace Find_HW_20.Controllers
         {
             try
             {
-                var result = _CarModelAppSevice.DeleteCarModel(id);
+                var result = _CarModelAppSevice.DeleteCarModelAsync(id);
                 if (result == null)
                 {
                     TempData["ErrorMessage"] = "مدل پیدا نشد.";
@@ -299,7 +299,7 @@ namespace Find_HW_20.Controllers
                 return View("Index", cardModel);
             }
             var result = _CarModelAppSevice.EditCarModel(id, name);
-            if (result && id != null)
+            if (result==null && id != null)
             {
                 TempData["ErrorMessage"] = " موفق بود.";
                 return RedirectToAction("CarModel");

@@ -155,6 +155,7 @@ C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\HW-21-API\obj
 C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\HW-21-API\obj\Debug\net9.0\HW-21-API.csproj.CoreCompileInputs.cache
 C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\HW-21-API\obj\Debug\net9.0\HW-21-API.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\HW-21-API\obj\Debug\net9.0\HW-21-API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\HW-21-API\obj\Debug\net9.0\HW-21-API.sourcelink.json
 C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\HW-21-API\obj\Debug\net9.0\scopedcss\bundle\HW-21-API.styles.css
 C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\HW-21-API\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\HW-21-API\obj\Debug\net9.0\staticwebassets.development.json
@@ -172,4 +173,3 @@ C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\HW-21-API\obj
 C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\HW-21-API\obj\Debug\net9.0\HW-21-API.pdb
 C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\HW-21-API\obj\Debug\net9.0\HW-21-API.genruntimeconfig.cache
 C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\HW-21-API\obj\Debug\net9.0\ref\HW-21-API.dll
-C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\HW-21-API\obj\Debug\net9.0\HW-21-API.sourcelink.json

@@ -1,22 +1,6 @@
 [
   {
     "ContainingType": "HW_21_API.Controllers.CarModelController",
-    "Method": "DeletCarModel",
-    "RelativePath": "CarModel",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "HW_21_API.Controllers.CarModelController",
     "Method": "Get",
     "RelativePath": "CarModel/{id}",
     "HttpMethod": "GET",
@@ -33,8 +17,8 @@
   },
   {
     "ContainingType": "HW_21_API.Controllers.CarModelController",
-    "Method": "AddCarModele",
-    "RelativePath": "CarModel/add-product",
+    "Method": "AddCarModelAsync",
+    "RelativePath": "CarModel/add",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -42,6 +26,22 @@
       {
         "Name": "name",
         "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HW_21_API.Controllers.CarModelController",
+    "Method": "DeletCarModel",
+    "RelativePath": "CarModel/Delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": false
       }
     ],

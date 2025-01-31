@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HW-20.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d99b61b2f766ae7ecc0da303e137157e14813a67")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e1c977ff1370d3268f1cdb2680f321dc3f5f4304")]
 [assembly: System.Reflection.AssemblyProductAttribute("HW-20.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HW-20.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

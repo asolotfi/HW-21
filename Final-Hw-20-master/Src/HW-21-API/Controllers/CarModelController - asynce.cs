@@ -47,7 +47,7 @@ namespace HW_21_API.Controllers
             }
 
             var result = _carModelAppSevice.EditCarModel(id, name);
-            if (!result)
+            if (result==null)
             {
                 return BadRequest("Edit failed.");
             }
@@ -58,7 +58,7 @@ namespace HW_21_API.Controllers
         {
             try
             {
-                var result = _carModelAppSevice.DeleteCarModel(id);
+                var result = _carModelAppSevice.DeleteCarModelAsync(id);
                 if (result == null)
                 {
                     return BadRequest("مدل پیدا نشد");
@@ -81,7 +81,7 @@ namespace HW_21_API.Controllers
             {
                 return BadRequest("لطفاً داده‌ها را به صورت صحیح وارد کنید");
             }
-            var result = _carModelAppSevice.AddCarModel(name);
+            var result = _carModelAppSevice.AddCarModelAsync(name);
             return Ok("مدل تأیید شد.");
         }
     }

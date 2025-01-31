@@ -100,7 +100,7 @@ namespace Find_HW_20.Controllers
             }
 
             var result = _CarModelSevice.EditCarModel(id, name);
-            if (result)
+            if (result == null)
             {
                 TempData["SuccessMessage"] = "عملیات ویرایش با موفقیت انجام شد.";
                 return RedirectToAction("CarModel");

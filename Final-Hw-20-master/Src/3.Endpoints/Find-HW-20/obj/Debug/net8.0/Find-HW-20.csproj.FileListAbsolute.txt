@@ -215,8 +215,11 @@ C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\3.Endpoints\F
 C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\3.Endpoints\Find-HW-20\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\3.Endpoints\Find-HW-20\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\3.Endpoints\Find-HW-20\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\3.Endpoints\Find-HW-20\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\3.Endpoints\Find-HW-20\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
 C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\3.Endpoints\Find-HW-20\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
 C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\3.Endpoints\Find-HW-20\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\3.Endpoints\Find-HW-20\bin\Debug\net8.0\Microsoft.Extensions.ObjectPool.dll
 C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\3.Endpoints\Find-HW-20\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\3.Endpoints\Find-HW-20\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
 C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\3.Endpoints\Find-HW-20\bin\Debug\net8.0\Microsoft.Identity.Client.dll
@@ -343,6 +346,7 @@ C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\3.Endpoints\F
 C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\3.Endpoints\Find-HW-20\obj\Debug\net8.0\Find-HW-20.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\3.Endpoints\Find-HW-20\obj\Debug\net8.0\Find-HW-20.RazorAssemblyInfo.cache
 C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\3.Endpoints\Find-HW-20\obj\Debug\net8.0\Find-HW-20.RazorAssemblyInfo.cs
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\3.Endpoints\Find-HW-20\obj\Debug\net8.0\Find-HW-20.sourcelink.json
 C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\3.Endpoints\Find-HW-20\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\3.Endpoints\Find-HW-20\obj\Debug\net8.0\scopedcss\bundle\Find-HW-20.styles.css
 C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\3.Endpoints\Find-HW-20\obj\Debug\net8.0\scopedcss\projectbundle\Find-HW-20.bundle.scp.css
