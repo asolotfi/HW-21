@@ -21,12 +21,14 @@ namespace HW_21_API.Controllers
             _carModelSevice = carModelSevice;
             _carModelAppSevice = carModelAppSevice;
         }
+     
         [HttpGet("List")]
         public async Task<List<CarModel>> CarModel()
         {
             List<CarModel> carModels = _appDbcontext.CarModels.ToList();
             return carModels;
         }
+        //[ServiceFilter(typeof(ApiKeyActionFilter))]
         [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
@@ -37,7 +39,7 @@ namespace HW_21_API.Controllers
             }
             return Ok(result);
         }
-
+        //[ServiceFilter(typeof(ApiKeyActionFilter))]
         [HttpPost("edit")]
         public async Task<IActionResult> EditCarModel(int id, string name)
         {
@@ -53,7 +55,7 @@ namespace HW_21_API.Controllers
             }
             return Ok("ویرایش با موفقیت انجام شد.");
         }
-
+        //[ServiceFilter(typeof(ApiKeyActionFilter))]
         [HttpPost("Delete")]
         public async Task<IActionResult> DeletCarModel(int id)
         {
@@ -74,6 +76,7 @@ namespace HW_21_API.Controllers
                 return BadRequest("خطایی در تأیید مدل رخ داد");
             }
         }
+        //[ServiceFilter(typeof(ApiKeyActionFilter))]
         [HttpPost("add")]
         public async Task<IActionResult> AddCarModelAsync(string name)
         {

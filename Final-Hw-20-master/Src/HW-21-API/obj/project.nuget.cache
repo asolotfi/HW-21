@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "b4AGPLBd0Ww=",
+  "dgSpecHash": "ntkxarM09Dk=",
   "success": true,
   "projectFilePath": "C:\\Users\\asolo\\OneDrive\\Desktop\\Final-Hw-20\\Final-Hw-20-master\\Src\\HW-21-API\\HW-21-API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\asolo\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\asolo\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
+    "C:\\Users\\asolo\\.nuget\\packages\\fluentassertions\\8.0.1\\fluentassertions.8.0.1.nupkg.sha512",
     "C:\\Users\\asolo\\.nuget\\packages\\fluentvalidation\\11.11.0\\fluentvalidation.11.11.0.nupkg.sha512",
     "C:\\Users\\asolo\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\asolo\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.3.0\\microsoft.aspnetcore.authentication.abstractions.2.3.0.nupkg.sha512",
