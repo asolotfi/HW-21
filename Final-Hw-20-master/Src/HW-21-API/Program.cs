@@ -7,11 +7,13 @@ using HW_20.Infrastructure.Repositoris;
 using HW_20.Service.AppService;
 using HW_20.Service.Service;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
 using Scalar.AspNetCore;
 
 
 var builder = WebApplication.CreateBuilder(args);
+
+
+
 
 // پیکربندی سرویس‌های دیتابیس
 builder.Services.AddDbContext<AppDbContext>(options =>
@@ -48,6 +50,8 @@ builder.Services.AddControllersWithViews().AddDataAnnotationsLocalization();
 builder.Services.AddOpenApi();
 
 var app = builder.Build();
+// اطمینان از قرار دادن مخصوصاً در بالای مپ کنترلرها
+//app.UseMiddleware<ApiKeyMiddleware>();
 
 // تنظیمات مربوط به محیط توسعه و دیگر پیکربندی‌ها
 if (app.Environment.IsDevelopment())
@@ -57,6 +61,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+
 app.UseAuthorization();
 app.MapControllers();
 
