@@ -26,6 +26,7 @@ C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\2.Infrastruct
 C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\2.Infrastructure\HW-20.Infrastructure\obj\Debug\net8.0\HW-20.Infrastructure.AssemblyInfoInputs.cache
 C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\2.Infrastructure\HW-20.Infrastructure\obj\Debug\net8.0\HW-20.Infrastructure.AssemblyInfo.cs
 C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\2.Infrastructure\HW-20.Infrastructure\obj\Debug\net8.0\HW-20.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\2.Infrastructure\HW-20.Infrastructure\obj\Debug\net8.0\HW-20.Infrastructure.sourcelink.json
 C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\2.Infrastructure\HW-20.Infrastructure\obj\Debug\net8.0\HW-20.In.7A8E69B7.Up2Date
 C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\2.Infrastructure\HW-20.Infrastructure\obj\Debug\net8.0\HW-20.Infrastructure.dll
 C:\Users\asolo\OneDrive\Desktop\Final-Hw-20\Final-Hw-20-master\Src\2.Infrastructure\HW-20.Infrastructure\obj\Debug\net8.0\refint\HW-20.Infrastructure.dll

@@ -1,4 +1,5 @@
 ﻿using HW_20.Domain.Entites.Car;
+using Microsoft.AspNetCore.Mvc;
 
 namespace HW_20.Domain.Contract.Repositoris
 {
@@ -10,27 +11,28 @@ namespace HW_20.Domain.Contract.Repositoris
         {
             _CarModelRepository = CarModelRepository;
         }
-        public int AddCarModel(string name)
+        public Task<int> AddCarModelAsync(string name)
         {
-          var result= _CarModelRepository.AddCarModel(name);
+          var result= _CarModelRepository.AddCarModelAsync(name);
             return result;
         }
 
-        public bool DeleteCarModel(int id)
+        public Task<bool> DeleteCarModelAsync(int id)
         {
-            _CarModelRepository.DeleteCarModel(id);
-            return true;
+          var result=  _CarModelRepository.DeleteCarModelAsync(id);
+            return result;
         }
 
-        public bool EditCarModel(int id, string name)
+        public Task<IActionResult> EditCarModel(int id, string name)
         {
-            _CarModelRepository.EditCarModel(id, name);
-            return true;
+          var result=  _CarModelRepository.EditCarModel(id, name);
+            return result;
         }
 
         public CarModel GetCarModel(int id)
         {
-            return _CarModelRepository.GetCarModel(id);
+            var result= _CarModelRepository.GetCarModelAsync(id);
+            return result.Result;
         }
     }
 }

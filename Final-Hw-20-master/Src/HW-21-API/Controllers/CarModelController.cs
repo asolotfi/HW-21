@@ -2,6 +2,7 @@
 using HW_20.Domain.Contract.Service;
 using HW_20.Domain.Entites.Car;
 using HW_20.Infrastructure.DB;
+using HW_21_API.Middelware;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HW_21_API.Controllers
@@ -10,80 +11,85 @@ namespace HW_21_API.Controllers
     [Route("[controller]")]
     public class CarModelController : ControllerBase
     {
-        private readonly AppDbContext _appDbContext;
-        private readonly ICarModelSevice _CarModelSevice;
-        private readonly ICarModelAppSevice _CarModelAppSevice;
-        public CarModelController(AppDbContext appDbContext, ICarModelSevice CarModelSevice, ICarModelAppSevice CarModelAppSevice)
-        {
-            _appDbContext = appDbContext;
-            _CarModelSevice = CarModelSevice;
-            _CarModelAppSevice = CarModelAppSevice;
+        private readonly AppDbContext _appDbcontext;
+        private readonly ICarModelSevice _carModelSevice;
+        private readonly ICarModelAppSevice _carModelAppSevice;
 
-        }
-   
-        [HttpGet]
-        public IActionResult CarModel()
+        public CarModelController(AppDbContext appDbContext, ICarModelSevice carModelSevice, ICarModelAppSevice carModelAppSevice)
         {
-            var requests = _appDbContext.CarModels.ToList();
-            return Ok(requests); 
+            _appDbcontext = appDbContext;
+            _carModelSevice = carModelSevice;
+            _carModelAppSevice = carModelAppSevice;
         }
+     
+        [HttpGet("List")]
+        public async Task<List<CarModel>> CarModel()
+        {
+            List<CarModel> carModels = _appDbcontext.CarModels.ToList();
+            return carModels;
+        }
+        //[ServiceFilter(typeof(ApiKeyActionFilter))]
         [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
-            var result = _CarModelSevice.GetCarModel(id);
+            var result = _carModelSevice.GetCarModel(id);
             if (result == null)
             {
                 return NotFound("مدل وجود ندارد.");
             }
             return Ok(result);
         }
-
-        [HttpPost("Edit")]
-        public IActionResult EditCarModel(int id, string name)
+        //[ServiceFilter(typeof(ApiKeyActionFilter))]
+        [HttpPost("edit")]
+        public async Task<IActionResult> EditCarModel(int id, string name)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest("لطفاً داده‌ها را به صورت صحیح وارد کنید.");
             }
 
-            var result = _CarModelAppSevice.EditCarModel(id, name);
-            if (!result)
+            var result = await _carModelAppSevice.EditCarModel(id, name); 
+            if (result==null)
             {
                 return BadRequest("ویرایش ناموفق بود.");
             }
-            return Ok("ویرایش موفق بود.");
+            return Ok("ویرایش با موفقیت انجام شد.");
         }
-
+        //[ServiceFilter(typeof(ApiKeyActionFilter))]
         [HttpPost("Delete")]
-        public IActionResult DeletCarModel(int id)
+        public async Task<IActionResult> DeletCarModel(int id)
         {
             try
             {
-                var result = _CarModelAppSevice.DeleteCarModel(id);
+                var result = await _carModelAppSevice.DeleteCarModelAsync(id);
                 if (!result)
                 {
-                    return NotFound("مدل پیدا نشد");
+                    return BadRequest("مدل پیدا نشد");
                 }
                 return Ok("مدل تأیید شد.");
             }
             catch (Exception ex)
             {
+                // لاگ کردن خطا
+                Console.WriteLine($"Error: {ex.Message}");
+                Console.WriteLine($"Stack Trace: {ex.StackTrace}");
                 return BadRequest("خطایی در تأیید مدل رخ داد");
             }
         }
-        [HttpPost("Add")]
-        public IActionResult AddCarModele(string name)
+        //[ServiceFilter(typeof(ApiKeyActionFilter))]
+        [HttpPost("add")]
+        public async Task<IActionResult> AddCarModelAsync(string name)
         {
-            var cardModel = new CarModel
-            {
-                Name = name,
-            };
             if (!ModelState.IsValid)
             {
                 return BadRequest("لطفاً داده‌ها را به صورت صحیح وارد کنید");
             }
-            var result = _CarModelAppSevice.AddCarModel(name);
-            return Ok("مدل ثبت شد.");
+            var result = await _carModelAppSevice.AddCarModelAsync(name); // استفاده از متد Asynchronous
+            if (result == 0)
+            {
+                return BadRequest("مدل قبلاً وجود دارد.");
+            }
+            return Ok("مدل با موفقیت اضافه شد.");
         }
     }
 }
